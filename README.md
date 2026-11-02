@@ -1,6 +1,6 @@
 # Professional_Resume
 
-Github: 
+Github: https://github.com/saswata35/Professional_Resume.git
 
 Repo: 
 
