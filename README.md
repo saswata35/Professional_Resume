@@ -4,4 +4,4 @@ Github: https://github.com/saswata35/Professional_Resume.git
 
 Repo: 
 
-Vercel: 
+Vercel: https://professional-resume-blond.vercel.app/
