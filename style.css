@@ -1,0 +1,52 @@
+/* Custom Stylesheet connected to index.html */
+
+:root {
+    --hero-bg: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    --body-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #212529;
+}
+
+[data-bs-theme="dark"] {
+    --hero-bg: linear-gradient(135deg, #1a1d20 0%, #212529 100%);
+    --body-bg: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #f8f9fa;
+}
+
+body {
+    background-color: var(--body-bg) !important;
+    color: var(--text-color) !important;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-section {
+    background: var(--hero-bg);
+}
+
+.card {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+/* Print styling adjustments */
+@media print {
+    .navbar, header, footer, #themeToggleBtn {
+        display: none !important;
+    }
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+    .card {
+        border: 1px solid #dee2e6 !important;
+        box-shadow: none !important;
+    }
+}
